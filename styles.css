@@ -1,20 +1,33 @@
-/* Apply your own styling here */
-/* Example: Set the height of welcome-section to viewport height */
 
+@media screen and (min-width: 600px){
+    body {
+        font-size: 16px;
+    }
+}
 
-/* Example: Sticky navbar at the top */
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;   
+}
+
+/* Whole body design */
 
 body {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
   font-weight: 100px;
   font-style: normal;
+  font-size: 1.5rem;
+  zoom: 1.2;
+  transform-origin: 0 0;
 }
 
-body {
-   border: 0px;
-   padding: 0;
+h1 {
+    font-size: 2em;
 }
+
+/* Top navbar */
 #navbar {
     position: sticky;
     top: 0;
@@ -23,19 +36,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 0.5px #000;
     transition: border-bottom 0.3s ease;
     
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    margin: 10px;
-    
-    
-    
-}
+/* this is for the welocme section */
+
 
 #welcome-section {
     height: 100vh;
@@ -53,40 +59,49 @@ a {
 }
 
 .right-column img {
-    max-width: 100%;
-    height: auto;
+    max-width: 75vw;
+    height: 75vh;
     object-fit: fill;
-    border-radius: 50%;
 }
 
-/* Example: Style project tiles */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
+
 .project-tile {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    /* Add other styles as needed */
+    text-align: center;
+    font-size: 16px;
+    padding: 5%;
 }
 
+.project-tile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-/* Apply your own styling here */
 #contact-section {
-    
+    display: flex;
 }
 
 #social-links {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 #social-links li {
-    margin-right: 20px; /* Add spacing between items */
+    margin-right: 20px;
 }
 
 .social-icon {
-    width: 24px; /* Adjust icon size */
-    height: 24px;
-    margin-right: 5px; /* Add spacing between icon and text */
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 5px; 
 }
+
