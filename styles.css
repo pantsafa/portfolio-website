@@ -1,33 +1,76 @@
 /* General styling*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body 
+body {
+    font-family: "Roboto Mono", monospace, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
 
 
 
+
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    position: sticky;
+}
+
+.nav-links {
+    color: #000;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
 
 a {
+    color: #000;
     text-decoration: none;
-    color: inherit;
-    margin: 10px;   
+    text-decoration: white;   
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
 }
 
 /* Whole body design */
 
-body {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
-  font-size: 1.5rem;
-  zoom: 1.2;
-  transform-origin: 0 0;
+#welcome-section,
+.welcome-section {
+    height: auto;
+    display: flex;
 }
 
+#welcome-section {
+    height: 100vh;
+    justify-content: space-around;
+
+}
+
+#welcome-image {
+    size: 100px;
+}
 h1 {
     font-size: 2em;
 }
@@ -35,29 +78,13 @@ h1 {
 /* Top navbar */
 #navbar {
     position: sticky;
-    top: 0;
     background-color: #fff;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border-bottom 0.3s ease;
-    
+    top: 0;
+    transition: border-bottom 0.3s ease;  
 }
 
 /* this is for the welocme section */
 
-
-#welcome-section {
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background: linear-gradient(to top, black, white);
-}
 
 .left-column, .right-column {
     flex: 1;
