@@ -42,7 +42,7 @@
     <!-- Profile Section -->
     <section id="profile">      
       <div class="section-pic-container">
-        <img id="Welcome-image"
+        <img id="profile-image"
           src="./assets/safal-image.png"
           alt="safal profile image"
         />
@@ -55,61 +55,41 @@
       <div class="btn-container">
         <button
           class="btn btn-color-2"
-          onclick="window.open('.asse')"
-        ></button>
+          onclick="window.open('./assets/documents/Safal_Resume_IT_Support.pdf')"
+        > 
+        Download CV
+      
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
       </div>
-
-
-      <!-- Add any other content you'd like here -->
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="project-grid">
-      <div class="project-tile">
-        
-    <section id="contact-section">
-      <ul id="social-links">
-        <li>
-          <a href="https://www.linkedin.com/in/safal-panta" target="_blank">
-            <img
+      <div id="socials-container">
+          <img
               src="./assets/linkedin.png"
               alt="LinkedIn icon"
               class="social-icon"
-            />
-            Connect on LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/pantsafa" target="_blank">
-            <img
-              src="./assets/github.png"
-              alt="GitHub icon"
-              class="social-icon"
-            />
-            My GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/your-twitter-handle" target="_blank">
-            <img
+              onclick="location.href='https://www.linkedin.com/in/safal-panta'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="social-icon"
+            onclick="location.href='https://github.com/pantsafa'"
+          />
+          <img
               src="./assets/twitter.png"
-              alt="Twitter icon"
+              alt="Twitter logo"
               class="social-icon"
-            />
-            Connect on Twitter
-          </a>
-        </li>
-        <li>
-          <a href="mailto:safalpanta@gmail.com" target="_blank">
+              onclick="location.href='https://twitter.com/your-twitter-handle'"
+          />
             <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="social-icon"
-            />
-            Email me
-          </a>
-        </li>
-      </ul>
+            src="./assets/email.png"
+            alt="Email icon"
+            class="social-icon"
+            onclick="location.href='mailto:safalpanta@gmail.com'"
+          />
+      </div>
     </section>
     <script src="script.js"></script>
 
