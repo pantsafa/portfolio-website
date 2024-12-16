@@ -1,158 +1,141 @@
 /* General styling*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Roboto Mono", monospace, sans-serif;
+  font-family: "Roboto Mono", monospace, sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
 
-
-
-
+a,
+.btn {
+  transition: all 300ms smooth;
+}
 
 nav,
 .nav-links {
-    display: flex;
+  display: flex;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-    position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  position: sticky;
 }
 
 .nav-links {
-    color: #000;
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  color: #000;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 a {
-    color: #000;
-    text-decoration: none;
-    text-decoration: white;   
+  color: #000;
+  text-decoration: none;
+  text-decoration: white;
 }
 
 a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
-/* Whole body design */
 
-section,
-.welcome-section {
-    display: flex;
-    height: 100vh;
-}
-
-.welcome-section {
-    height: 100vh;
-    justify-content: space-around;
-
-}
-
-img, #welcome-image {
-    height: 50vh;
-    border: #000 solid 2px;
-    border-style: hidden;
-    border-radius: 50%;
-    align-self: center;
-}
-
-#welcome-text {
-    display: block;
-    padding: 3rem;
-    margin-top: 10%;
-}
-.tagline {
-    max-width: 50vw;
-    margin-top: 2rem;
-}
-
-#tagline-title {
-    font-size: 3rem;
-    
-}
-
-.welcome-section {
-    display: flex;
-}
 /* Top navbar */
 #navbar {
-    position: sticky;
-    background-color: #fff;
-    top: 0;
-    transition: border-bottom 0.3s ease;  
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  transition: border-bottom 0.3s ease;
+}
+/* Hamburger menu */
+#hamburger-nav {
+    display: none;
 }
 
-/* this is for the welocme section */
-
-
-.left-column, .right-column {
-    flex: 1;
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
 }
 
-.right-column img {
-    max-width: 75vw;
-    height: 75vh;
-    object-fit: fill;
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 }
 
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px; 
-}
-
-.project-tile {
-    text-align: center;
-    font-size: 16px;
-    padding: 5%;
-}
-
-.project-tile img {
-    object-fit: cover;
+.hamburger-icon span {
     width: 100%;
-    height: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3 ease-in-out;
 }
 
-#contact-section {
-    display: flex;
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
 }
 
-#social-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+
 }
 
-#social-links li {
-    margin-right: 20px;
+.menu-links li {
+    list-style: none;
 }
 
-.social-icon {
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 5px; 
+.menu-links.open {
+    max-height: 300px;
 }
 
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+   opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* section */

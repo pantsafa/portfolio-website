@@ -21,20 +21,45 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Welcome Section -->
-    <section>
-      <div class="welcome-section" id="welcome-text">
-        <h1 id="tagline-title">Welcome to My Portfolio</h1>
-        <p class="tagline">Welcome to Safal's code carnival! I turn caffeine into software and bugs into features. When I'm not whispering sweet nothings to my keyboard, I'm crafting digital solutions that make both computers and humans happy. Buckle up, buttercup – you're in for a wild ride through my pixel-perfect paradise! </p>
+    <nav id="hamburger-nav">
+      <div class="logo">Safal Panta</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#welcome-section" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a id="profile-link" href="https://github.com/pantsafa" target="_blank"
+              onclick="toggleMenu()">GitHub</a</li>
+            <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
+    </nav>
 
-      <div class="welcome-section">
+    <!-- Profile Section -->
+    <section id="profile">      
+      <div class="section-pic-container">
         <img id="Welcome-image"
           src="./assets/safal-image.png"
-          alt="safdev image"
+          alt="safal profile image"
         />
       </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I am</p>
+        <h1 id="title">Safal Panta</h1>
+        <p class="tagline">Welcome to my code carnival! I turn caffeine into software and bugs into features. When I'm not whispering sweet nothings to my keyboard, I'm crafting digital solutions that make both computers and humans happy. Buckle up, buttercup – you're in for a wild ride through my pixel-perfect paradise! </p>
+      </div>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('.asse')"
+        ></button>
+      </div>
+
+
       <!-- Add any other content you'd like here -->
     </section>
 
@@ -86,6 +111,7 @@
         </li>
       </ul>
     </section>
+    <script src="script.js"></script>
 
     <footer></footer>
   </body>
