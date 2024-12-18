@@ -18,44 +18,34 @@
     <a href="#" class="logo"><span>Safal Panta</span></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="./blogs.html">Blogs</a></li>
       </ul>
-      <i class="fa-solid fa-bars"></i>
-      <button class="visit-btn">Visit Github</button>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <button class="visit-btn" onclick="window.open('https://github.com/pantsafa')">Visit Github</button>
   </header>
   <!-- Profile Section -->
-  <section id="profile">
-    <div class="section__pic-container">
+  <section id="about" class="about">
+    <div class="about-container">
       <img id="profile-image" src="./assets/profile_image.png" alt="safal profile image" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I am</p>
-      <h1 class="title">Safal Panta</h1>
-      <p class="section__text_p2">Wanna be software developer </p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/documents/Safal_Resume_IT_Support.pdf')">
-          Download CV
-
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="social-icon"
-          onclick="location.href='https://www.linkedin.com/in/safal-panta'" />
-        <img src="./assets/github.png" alt="GitHub icon" class="social-icon"
-          onclick="location.href='https://github.com/pantsafa'" />
-        <img src="./assets/twitter.png" alt="Twitter logo" class="social-icon"
-          onclick="location.href='https://twitter.com/your-twitter-handle'" />
-        <img src="./assets/email.png" alt="Email icon" class="social-icon"
-          onclick="location.href='mailto:safalpanta@gmail.com'" />
+      <div class="info-box">
+        <h3>Hi, I am</h3>
+        <h1 class="title">Safal Panta</h1>
+        <p class="section__text_p2"><span>Jr. Software Developer</span> </p>
+        <div class="btn-group">
+          <div class="btn" onclick="window.open('./assets/documents/Safal_Resume_IT_Support.pdf')">Download CV</div>
+          <div class="btn" onclick="location.href='./#contact'">Contact Info</div>
+        </div>
+        <div class="socials">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
       </div>
     </div>
-
   </section>
   <section id="experience" class="experience">
     <h2 class="section-title">Experience</h2>
@@ -125,7 +115,41 @@
         </div>
       </div>
   </div>
+
+  <section class="contact" id="contact">
+    <div class="input-box">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="input">
+        <input type="text" placeholder="example@email.com">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+      <div class="btn">Submit</div>
+    </div>
   </section>
+  </section>
+  <footer>
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="./blogs.html">Blogs</a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; All Rights Reserved | Safal Panta</p>
+  </footer>
+
+  
   <script src="script.js"></script>
 
   <footer></footer>
