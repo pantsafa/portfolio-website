@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./mediaqueries.css">
-    <title>SafDev Portfolio</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div>Safal Panta</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a id="profile-link" href="https://github.com/pantsafa" target="_blank"
-                    >GitHub</a</li>
-                <li><a href="#contact-section">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Safal Panta</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#welcome-section" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a id="profile-link" href="https://github.com/pantsafa" target="_blank"
-              onclick="toggleMenu()">GitHub</a</li>
-            <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <!-- Profile Section -->
-    <section id="profile">      
-      <div class="section__pic-container">
-        <img id="profile-image"
-          src="./assets/profile_image.png"
-          alt="safal profile image"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I am</p>
-        <h1 class="title">Safal Panta</h1>
-        <p class="section__text_p2">Wanna be software developer </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/documents/Safal_Resume_IT_Support.pdf')"
-          > 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>SafDev Portfolio</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <a href="#" class="logo"><span>Safal Panta</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./blogs.html">Blogs</a></li>
+      </ul>
+      <i class="fa-solid fa-bars"></i>
+      <button class="visit-btn">Visit Github</button>
+  </header>
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img id="profile-image" src="./assets/profile_image.png" alt="safal profile image" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I am</p>
+      <h1 class="title">Safal Panta</h1>
+      <p class="section__text_p2">Wanna be software developer </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/documents/Safal_Resume_IT_Support.pdf')">
           Download CV
-        
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Contact Info
-          </button>
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="social-icon"
+          onclick="location.href='https://www.linkedin.com/in/safal-panta'" />
+        <img src="./assets/github.png" alt="GitHub icon" class="social-icon"
+          onclick="location.href='https://github.com/pantsafa'" />
+        <img src="./assets/twitter.png" alt="Twitter logo" class="social-icon"
+          onclick="location.href='https://twitter.com/your-twitter-handle'" />
+        <img src="./assets/email.png" alt="Email icon" class="social-icon"
+          onclick="location.href='mailto:safalpanta@gmail.com'" />
+      </div>
+    </div>
+
+  </section>
+  <section id="experience" class="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-info">
+      <div class="grid">
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span>Frontend Development</span>
+          <h3>2 Years</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis quasi maiores atque fuga aut excepturi minima sunt veniam et amet.</p>
         </div>
-        <div id="socials-container">
-          <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="social-icon"
-              onclick="location.href='https://www.linkedin.com/in/safal-panta'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="GitHub icon"
-            class="social-icon"
-            onclick="location.href='https://github.com/pantsafa'"
-          />
-          <img
-              src="./assets/twitter.png"
-              alt="Twitter logo"
-              class="social-icon"
-              onclick="location.href='https://twitter.com/your-twitter-handle'"
-          />
-            <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="social-icon"
-            onclick="location.href='mailto:safalpanta@gmail.com'"
-          />
+        <div class="grid-card">
+          <i class="fa-solid fa-headphones"></i>
+          <span>IT Support</span>
+          <h3>5 Years</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis quasi maiores atque fuga aut excepturi minima sunt veniam et amet.</p>
+        </div>
+        <div class="grid-card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Computer Science Instructor</span>
+          <h3>3 Years</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis quasi maiores atque fuga aut excepturi minima sunt veniam et amet.</p>
+        </div>
+        <div class="grid-card">
+          <i class="fa-solid fa-laptop-medical"></i>
+          <span>Computer Technician</span>
+          <h3>3 Years</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis quasi maiores atque fuga aut excepturi minima sunt veniam et amet.</p>
         </div>
       </div>
+      <img src="./assets/profile-photo-2.PNG" alt="safal profile image">
+    </div>
+    
+  </section>
+  <script src="script.js"></script>
 
-    </section>
-    <script src="script.js"></script>
+  <footer></footer>
+</body>
 
-    <footer></footer>
-  </body>
 </html>
